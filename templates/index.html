@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barnilin Equation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.16/katex.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tilt+Neon"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.16/katex.min.js"></script>
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form method="post" id="formData" class="glass-panel">
+        <h1>Enter Co-efficient and value of Barnilin Equation</h1>
+        <h1>D+P(x)Y=Q(x)Y^n</h1>
+        <br />
+        <label class="label1">Enter the Co-efficient of P</label>
+        <input type="text" class="inputField1" name="P">
+        <label>Enter the Co-efficient of Q</label>
+        <input type="text" class="inputField2" name="Q">
+        <label>Enter the value of n</label>
+        <input type="text" class="inputField3" name="n">
+        <label class="label1">Enter the value of x</label>
+        <input type="text" class="inputField4" name="x">
+        <label>Enter the value of y</label>
+        <input type="text" class="inputField5" name="y">
+        <button placeholder="Submit" class="btn" type="submit">
+          Get Solution
+        </button>
+      </form>
+      <form id="myForm" method="post"></form>
+
+      <h2 id="error"></h2>
+      <h2 id="eq"></h2>
+      <h2 id="order"></h2>
+
+      
+      <h2 id="ans"></h2>
+      <div id="solution"></div>
+      
+      <h2 id="partAns"></h2>
+      <div id="partialSolution"></div>
+      
+    
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
