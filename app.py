@@ -15,11 +15,15 @@ def index():
         n = float(request.form['n'])
         x_val = request.form['x']
         y_val = request.form['y']
-        print("p: ", p_str)
-        print("Q: ", q_str)
-        print("N: " ,n)
-        print("y val" ,y_val)
+        # print("p: ", p_str)
+        # print("Q: ", q_str)
+        # print("N: " ,n)
+        # print("y val" ,y_val)
         solve = solve_func(p_str, q_str, n)
+        if(len(x_val) != 0 and len(y_val) != 0):
+            solve = solve_func_w_value(p_str, q_str, n, x_val, y_val)
+        
+
         # print(solve)
         return render_template("solution.html", eqn = "eqn", soln = solve)
 
